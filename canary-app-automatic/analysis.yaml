@@ -15,7 +15,7 @@ spec:
             spec:
               containers:
                 - name: simple-http-call
-                  image: docker.io/containous/whoami:latest
+                  image: curlimages/curl:8.12.1
                   command:
                     ["curl",  "--silent", "rollout-canary-preview/callme"]
               restartPolicy: Never
